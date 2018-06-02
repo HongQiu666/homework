@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度首页</title>
+    <link rel="icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon">
 
+    <style>
+
+        #pic{
+            left:450px;
+            top: 100px;
+            position: absolute;
+        }
+        #box{
+            position: relative;
+        }
+        #box #first {
+            color:black;
+            font-size: 13px;
+            font-weight: 700;
+            position: absolute;
+            right: 0;
+            top:10px
+
+        }
+        #box a{
+            margin-left: 20px;
+
+        }
+        .set{
+            display: none;
+            position:absolute;
+            right: 80px;
+        }
+        .set li{
+            list-style: none;
+            background: #ffffff;
+        }
+        #more{
+            color:#ffffff;
+            background:blue;
+            font-size:15px;
+            text-decoration: none;
+        }
+        #sear{
+            width: 540px;
+            height: 37px;
+            top:220px;
+            left: 300px;
+            position: relative;
+        }
+
+        #box .baidu{
+
+            width: 100px;
+            height: 37px;
+            background:cornflowerblue;
+            color:#ffffff;
+            position: absolute;
+            text-align:center;
+            line-height: 37px;
+            left: 840px;
+            top: 220px;
+            font-size:15px;
+        }
+        #box .last{
+            position: absolute;
+            left:560px;
+            top:474px;
+        }
+        #lh{
+            font-size:12px;
+            left:450px;
+            top:589px;
+            color:#999999;
+            position: absolute;
+        }
+        #cp{
+            color:#999999;
+            font-size:12px;
+            left:400px;
+            top:620px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="first">
+        <a href="http://news.baidu.com/">新闻</a>
+        <a href="https://www.hao123.com/">hao123</a>
+        <a href="https://map.baidu.com/">地图</a>
+        <a href="http://v.baidu.com/">视频</a>
+        <a href="https://tieba.baidu.com/index.html">贴吧</a>
+        <a href="http://xueshu.baidu.com/">学术</a>
+        <a href="#">登录</a>
+        <a href="#" id="btn">设置</a>
+
+        <a href="#" id="more">更多产品</a>
+
+        <ul class="set">
+            <li>搜索设置</li>
+            <li>高级搜索</li>
+            <li>关闭预测</li>
+            <li>搜索历史</li>
+        </ul>
+    </div>
+
+    <a href="https://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs"><img src="img./百度.jpg" id="pic"></a>
+
+    <input type="search" id="sear">
+    <a href="#"> <div class="baidu">百度一下</div></a>
+    <img src="img/尾部.jpg" class="last">
+
+    <p id="lh">
+        <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+        <a href="http://home.baidu.com/">关于百度</a>
+        <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About  Baidu</a>
+        <a href="http://e.baidu.com/?refer=888">百度推广</a>
+    </p>
+    <p id="cp">
+        ©2018 Baidu<a href="https://www.baidu.com/duty/"> 使用百度前必读 意见反馈</a>京ICP证030173号
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="-black">京公网安备11000002000001号 </a>
+    </p>
+</div>
+<script>
+    var oBtn=document.getElementById("btn");
+    var oS=document.getElementsByTagName("ul")[0];
+
+    oBtn.onmouseover=function () {
+
+        oS.style.display="block";
+
+    }
+    oBtn.onmouseout=function () {
+
+        oS.style.display="none";
+
+    }
+</script>
+</body>
+</html>
