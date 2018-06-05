@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东注册</title>
+    <link rel="icon" href="https://reg.jd.com/favicon.ico" type="image/x-icon">
+    <style>
+        .html{
+            height: 100%;
+        }
+       html,body,div,img,a{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            font-size: 14px;
+        }
+        div{
+            display: block;
+        }
+        .progress-bar .pro-line, .progress-bar .pro-step .step-index {
+            background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/reg-icon.png) no-repeat;
+        }
+
+
+        body {
+            font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+            -webkit-font-smoothing: antialiased;
+            color: #666;
+            background: #fff;
+        }
+
+        .first{
+            min-width: 1100px;
+            min-height: 600px;
+            height: 100%;
+        }
+        .header{
+            height: 110px;
+            background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg) repeat-x left bottom;
+        }
+        .header .logo {
+            width: 160px;
+            height: 50px;
+            float: left;
+            margin-top: 24px;
+        }
+
+
+        .header .logo-title {
+            float: left;
+            height: 34px;
+            line-height: 34px;
+            font-size: 24px;
+            color: #333;
+            margin-top: 40px;
+        }
+        .header .have-account {
+            font-size: 16px;
+            float: right;
+            margin-top: 55px;
+            margin-right: -100px;
+            color: #999;
+            height: 21px;
+
+        }
+        .clear:after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .root61 .w {
+            width: 1210px;
+        }
+        .w {
+            width: 990px;
+            margin: 0 auto;
+        }
+        .progress-bar {
+            position: relative;
+            margin: 80px auto 0;
+            width: 400px;
+        }
+        .progress-bar .pro-step {
+            float: left;
+            text-align: center;
+        }
+        .progress-bar .cur-step .step-index {
+            background-position: 0 -200px;
+            color: #fff;
+        }
+        .progress-bar .pro-step .step-index {
+            margin: 0 auto;
+            display: block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            background-position: -45px -200px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #ccc;
+        }
+        .progress-bar .cur-step .step-index {
+            background-position: 0 -200px;
+            color: #fff;
+        }
+
+
+        .progress-bar .pro-step .step-desc {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #999;
+        }
+        .progress-bar .cur-step .step-desc {
+            color: #3b4;
+        }
+
+        .progress-bar .pro-step2 {
+            margin-left: 49px;
+        }
+        .progress-bar .person-pro-step2 {
+            margin-left: 106px;
+        }
+        p {
+            display: block;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+        .progress-bar .person-pro-line2 {
+            left: 228px;
+        }
+
+
+        .progress-bar .pro-line {
+            position: absolute;
+            top: 7px;
+            width: 74px;
+            height: 10px;
+            background-position: 0 -40px;
+        }
+        .progress-bar .person-pro-line {
+            width: 124px;
+            background-position: 0 -100px;
+        }
+
+
+        .progress-bar .pro-step3 {
+            margin-left: 43px;
+        }
+        .progress-bar .person-pro-step3 {
+            margin-left: 94px;
+        }
+        .progress-bar .person-pro-line1 {
+            left: 72px;
+        }
+        .progress-bar .person-pro-line2 {
+            left: 228px;
+        }
+        .main {
+            margin: 50px auto 186px;
+            width: 400px;
+        }
+        .main .import1{
+            display: block;
+            text-align: center;
+            width: 108px;
+            height: 51px;
+            float: left;
+        }
+        .main .arrow {
+            background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/icon.png) no-repeat;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-top: 15px;
+            margin-left: 5px;
+            background-position: -2px -150px;
+        }
+        .field{
+            width: 292px;
+            height: 47px;
+           position: relative;
+            top:-53px;
+            left: 108px;
+        }
+        .click{
+            width: 400px;
+            height: 47px;
+            border: 1px solid black;
+            font-size: 20px;
+            text-align: center;
+            line-height: 47px;
+
+        }
+         a{
+            text-decoration: none;
+        }
+         .import .box{
+             height: 106px;
+         }
+        .import .last{
+            width: 400px;
+            height: 47px;
+            border: 1px solid black;
+            font-size: 20px;
+            text-align: center;
+            line-height: 47px;
+            background: red;
+            color:#ffffff;
+        }
+        .import .con{
+           position: relative;
+            top:30px;
+            left: 20px;
+            float: left;
+        }
+        .import .con1{
+            position: relative;
+            top:30px;
+            left: 240px;
+        }
+    </style>
+</head>
+<body>
+<div class="first">
+        <div class="header ">
+            <div class="logo-con w clear">
+               <a href="https://www.jd.com/" class="logo" target="_blank"><img src="image/京东.png"></a>
+                     <div class="logo-title">欢迎注册</div>
+                         <div class="have-account">"已有账号？"<a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http://www.jd.com">请登录&gt;</a></div>
+              </div>
+         </div>
+      <div class="container w">
+        <div class="progress-bar clearfix">
+            <div class="pro-step cur-step">
+                <span class="step-index">1</span>
+                <p class="step-desc">验证手机号码</p>
+            </div>
+            <div class="pro-line pro-line1 person-pro-line person-pro-line1"></div>
+            <div class="pro-step pro-step2 person-pro-step2">
+                <span class="step-index">2</span>
+                <p class="step-desc">填写账号信息</p>
+            </div>
+            <div class="pro-line pro-line2 person-pro-line person-pro-line2"></div>
+            <div class="pro-step pro-step3 person-pro-step3">
+                <span class="step-index">3</span>
+                <p class="step-desc">注册成功</p>
+            </div>
+        </div>
+          <div class="main">
+              <div class="import">
+                  <label class="import1" id="select-country" country_id="0086" style="border: 1px solid rgb(102, 102, 102);">
+                      中国 0086
+                      <a href="javascript:void(0) " class="arrow down"></a>
+                  </label>
+                    <div class="warp">
+                        <input type="text" class="field">
+                    </div>
+                        <div class="box"> <a href=""><div class="click">点击按钮进行验证</div></a> </div>
+
+                  <div class="last">下一步</div>
+                  <a href="https://reg.jd.com/b/regPage?source=buser"><div  class="con">企业用户注册</div></a>
+                  <a href="https://reg.joybuy.com/reg/person.html"><div  class="con1">国际站注册</div></a>
+              </div>
+          </div>
+      </div>
+</div>
+</body>
+</html>
